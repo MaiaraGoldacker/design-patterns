@@ -1,4 +1,4 @@
-package implementation.factory.fullpattern.main;
+package implementation.factory.main;
 
 import implementation.factory.fullpattern.factory.CachorroFactory;
 import implementation.factory.fullpattern.factory.GoldenRetrieverFactory;
@@ -6,7 +6,7 @@ import implementation.factory.fullpattern.factory.PequinesFactory;
 import implementation.factory.fullpattern.factory.PinscherFactory;
 import implementation.factory.fullpattern.factory.PugFactory;
 
-public class FullPatternMain {
+public class FullPatternFactoryMain {
 
 	public static void main(String[] args) {
 		

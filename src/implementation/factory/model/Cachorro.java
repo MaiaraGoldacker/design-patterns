@@ -2,8 +2,9 @@ package implementation.factory.model;
 
 public abstract class Cachorro {
 	
-	public abstract void getCachorro();
+	public abstract void getCaracteristicasEspecificas();
 	
+	//todo o cachorro vai ter essas características específicas
 	public void quantidadePatas() {
 		System.out.println("quatro patas");
 	}

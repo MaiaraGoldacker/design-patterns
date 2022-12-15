@@ -11,7 +11,7 @@ public abstract class CachorroFactory {
 		cachorro.som();
 		cachorro.quantidadePatas();
 	
-		cachorro.getCachorro();
+		cachorro.getCaracteristicasEspecificas();
 		
 		return cachorro;
 	}

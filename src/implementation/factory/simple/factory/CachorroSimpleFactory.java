@@ -27,7 +27,7 @@ public class CachorroSimpleFactory {
 			cachorro.quantidadeOrelhas();
 			cachorro.som();
 			cachorro.quantidadePatas();	
-			cachorro.getCachorro();
+			cachorro.getCaracteristicasEspecificas();
 		}
 		
 		return cachorro;

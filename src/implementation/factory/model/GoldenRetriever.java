@@ -3,7 +3,7 @@ package implementation.factory.model;
 public class GoldenRetriever extends Cachorro {
 
 	@Override
-	public void getCachorro() {
+	public void getCaracteristicasEspecificas() {
 		System.out.println("Características Golden Retriever ");
 		System.out.println("1 - Focinho longo");
 		System.out.println("2 - Pelos dourados médio");

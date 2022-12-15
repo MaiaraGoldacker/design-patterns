@@ -25,5 +25,7 @@ public class FullPatternFactoryMain {
 		CachorroFactory pugFactory = new PugFactory();
 		System.out.println("### Cria Pug ###");
 		pugFactory.instanciaCachorro();
+		
+	
 	}
 }

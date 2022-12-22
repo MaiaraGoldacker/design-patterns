@@ -1,10 +1,16 @@
 package implementation.factory.main;
+import implementation.abstractfactory.DiarioCachorro;
+import implementation.abstractfactory.DiarioCachorroInverno;
+import implementation.abstractfactory.DiarioCachorroVerao;
 import implementation.factory.simple.factory.CachorroSimpleFactory;
 
 public class SimpleFactoryMain {
 
 	public static void main(String[] args) {
-		CachorroSimpleFactory cachorroSimpleFactory = new CachorroSimpleFactory();
+		
+		
+		DiarioCachorro diario = new DiarioCachorroInverno();
+		CachorroSimpleFactory cachorroSimpleFactory = new CachorroSimpleFactory(diario);
 		System.out.println("### Cria Golden ###");
 		cachorroSimpleFactory.instanciaCachorro("golden");
 	

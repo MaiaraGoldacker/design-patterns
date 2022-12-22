@@ -1,6 +1,12 @@
 package implementation.factory.model;
 
+import implementation.abstractfactory.DiarioCachorro;
+
 public class GoldenRetriever extends Cachorro {
+
+	public GoldenRetriever(DiarioCachorro diario) {
+		super(diario);		
+	}
 
 	@Override
 	public void getCaracteristicasEspecificas() {

@@ -1,6 +1,12 @@
 package implementation.factory.model;
 
+import implementation.abstractfactory.DiarioCachorro;
+
 public class Pinscher extends Cachorro {
+
+	public Pinscher(DiarioCachorro diario) {
+		super(diario);		
+	}
 
 	@Override
 	public void getCaracteristicasEspecificas() {

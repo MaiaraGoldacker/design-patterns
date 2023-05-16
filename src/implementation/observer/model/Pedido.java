@@ -1,4 +1,4 @@
-package implementation.command.model;
+package implementation.observer.model;
 
 import java.time.LocalDateTime;
 
@@ -32,11 +32,5 @@ public class Pedido {
 	public void setOrcamento(Orcamento orcamento) {
 		this.orcamento = orcamento;
 	}
-
-	@Override
-	public String toString() {
-		return "Pedido [cliente=" + cliente + ", data=" + data + "]";
-	}
-	
 
 }

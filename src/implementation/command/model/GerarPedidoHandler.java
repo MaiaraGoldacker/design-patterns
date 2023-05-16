@@ -1,6 +1,5 @@
 package implementation.command.model;
 
-import java.time.LocalDateTime;
 
 public class GerarPedidoHandler implements GerarPedidoCommand {
 
@@ -8,10 +7,10 @@ public class GerarPedidoHandler implements GerarPedidoCommand {
 	public void executar(GerarPedido dados) {
 		Orcamento orcamento = new Orcamento(dados.getValor(), dados.getQuantidadeItens());
 		
-		Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
+		Pedido pedido = new Pedido(dados.getCliente(), dados.getHoraEntrega(), orcamento);
 		
-		System.out.print("Salvar pedido no banco de dados" + pedido );
-		System.out.print("enviar email" + pedido);
-		System.out.print("Producer para Sistema Externo" + pedido);
+		System.out.println("Salvar pedido no banco de dados" + pedido.toString() );
+		System.out.println("enviar email" + pedido.toString());
+		System.out.println("Producer para Sistema Externo" + pedido.toString());
 	}
 }

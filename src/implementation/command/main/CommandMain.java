@@ -1,8 +1,9 @@
 package implementation.command.main;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.time.Month;
 
-import implementation.command.model.AgendarPedidoHandler;
 import implementation.command.model.GerarPedido;
 import implementation.command.model.GerarPedidoCommand;
 import implementation.command.model.GerarPedidoHandler;
@@ -17,10 +18,13 @@ public class CommandMain {
 
 	public static void main(String[] args) {
 		
+		//gerar pedido
 		GerarPedido gerarPedido = new GerarPedido("maiara", new BigDecimal(10), 1);
 		GerarPedidoCommand handler = new GerarPedidoHandler();
 		handler.executar(gerarPedido);
-		handler = new AgendarPedidoHandler();
-		handler.executar(gerarPedido);
+		
+		//gerar agendamento
+		GerarPedido gerarAgendamento = new GerarPedido("bruna", new BigDecimal(10), 1, LocalDateTime.of(2023, Month.DECEMBER,10,8, 0));
+		handler.executar(gerarAgendamento);
 	}
 }

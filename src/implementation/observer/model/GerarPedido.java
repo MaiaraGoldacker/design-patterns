@@ -1,4 +1,4 @@
-package implementation.command.model;
+package implementation.observer.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -22,7 +22,6 @@ public class GerarPedido {
 		this.cliente = cliente;
 		this.valor = valor;
 		this.quantidadeItens = quantidadeItens;
-		this.horaEntrega = LocalDateTime.now();
 	}
 
 	public String getCliente() {
